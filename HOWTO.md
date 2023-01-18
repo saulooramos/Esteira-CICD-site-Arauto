@@ -52,7 +52,7 @@ Exemplo:
 
 >Target the programming language
 
-O CI pipeline deve entender qual a linguagem e versão que será utilizada para compilar seu projeto, sendo assim, insira, ainda no arquivo workflow.yml, a linguagem e versão utilizando o comando `container`:
+O CI pipeline deve entender se o projeto deve ser executado em um container docker ou diretamente no SO da VM, sendo assim, especifique se será um projeto dockerizado utilizando o comando `container`:
 
 Exemplo:
 
