@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja da Arauto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Meditação e ioga</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Incensos e velas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Estátuas e decoração</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ervas e pedras</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Livros e Tarot</a>
+                </li>
+            </ul>
+            <img src="img/logo-arauto.png" alt="Logo da Arauto" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Arauto</b>Store</h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Meditação e ioga</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Incensos e velas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Estátuas e decoração</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ervas e pedras</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Livros e Tarot</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Meu altar</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" 
+                class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">O que você está procurando hoje?</h2>
+        <p class="banner__texto">Encontre em nossa página exatamente o que você precisa!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Pesquisar na loja">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/deck-tarot.png" alt="Deck Tarot"></div>
+                    <div class="swiper-slide"><img src="img/zafu-jeans.png" alt="Zafu Jeans"></div>
+                    <div class="swiper-slide"><img src="img/incenso-natural.png" alt="Incenso Natural"></div>
+                    <div class="swiper-slide"><img src="img/estatua-buda.png" alt="Estátua Buda"></div>
+                    <div class="swiper-slide"><img src="img/vela-aromatica.png" alt="Vela Aromática"></div>
+                    <div class="swiper-slide"><img src="img/livro-chakras.png" alt="Livro Chakras"></div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- Primeira linha -->
+                <div class="card__descricao">
+                    <!-- Primeira coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Olha só a nossa recomendação para você:</h3>
+                        <h2 class="descricao__titulo-produto">Zafu Arauto - Fogo</h2>
+                        <p class="descricao__texto">Almofada de meditação para melhorar postura e estabilizar atenção</p>
+                    </div>
+                    <!-- Segunda coluna -->
+                    <img src="img/zafu-fogo.png" class="descricao__imagem" alt="Zafu Fogo">
+                </div>
+                <!-- Segunda linha -->
+                <div class="card__botoes">
+                    <!-- Primeira coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar produto"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- Segunda coluna -->
+                    <a href="#" class="botoes__ancora">Mais detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/deck-tarot.png" alt="Deck Tarot"></div>
+                    <div class="swiper-slide"><img src="img/zafu-jeans.png" alt="Zafu Jeans"></div>
+                    <div class="swiper-slide"><img src="img/incenso-natural.png" alt="Incenso Natural"></div>
+                    <div class="swiper-slide"><img src="img/estatua-buda.png" alt="Estátua Buda"></div>
+                    <div class="swiper-slide"><img src="img/vela-aromatica.png" alt="Vela Aromática"></div>
+                    <div class="swiper-slide"><img src="img/livro-chakras.png" alt="Livro Chakras"></div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- Cabeçalho com estrelinhas -->
+                <div class="estrelinha">
+                    <img src="img/Estrelinhas.png">
+                </div>
+                <!-- Primeira linha -->
+                <div class="card__descricao">
+                    <!-- Primeira coluna -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Livro do mês</h3>
+                        <h2 class="descricao__titulo-produto">Mente Zen - mente de principiante</h2>
+                        <p class="descricao__texto">Palestras informações sobre meditação e prática Zen - Shunryu SUZUKI</p>
+                    </div>
+                    <!-- Segunda coluna -->
+                    <img src="img/mente-zen.png" class="descricao__imagem" alt="Capa livro Mente Zen">
+                </div>
+                <!-- Segunda linha -->
+                <div class="card__botoes">
+                    <!-- Primeira coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar produto"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- Segunda coluna -->
+                    <a href="#" class="botoes__ancora">Mais detalhes</a>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Zafu</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Pedras</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Livros</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Meditação</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Ioga</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Tarot</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Incensos</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Decoração</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das nossas novidades!</h2>
+            <p class="contato__texto">Indicações de acordo com o seu perfil, novos produtos, promoçoes e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Arauto Zazen</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Instagram</li>
+            <li class="lista-rodape__item">
+                <img src="img/CasaDoCodigo.png" alt="Logo casa do código">
+                <a href="#" class="lista-rodape__link">@arauto_zazen</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Whatsapp</li>
+            <li class="lista-rodape__item">
+                <img src="img/CasaDoCodigo.png" alt="Logo casa do código">
+                <a href="#" class="lista-rodape__link">(31) 9 9920-9829</a>
+            </li>
+        </ul>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Facebook</li>
+            <li class="lista-rodape__item">
+                <img src="img/CasaDoCodigo.png" alt="Logo casa do código">
+                <a href="#" class="lista-rodape__link">Facebook da Arauto</a>
+            </li>
+        </ul>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
